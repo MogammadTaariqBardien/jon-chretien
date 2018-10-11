@@ -1,4 +1,4 @@
-# rebuilding-jon-cretian
+# Rebuilding Jon Cretian
 This repository contains my best efforts to rebuild and recreate the website of Jon Cretian using what I have learnt in class.
 
 ## Live Link
@@ -33,6 +33,9 @@ Tools:
 - Base folders added
 - Readme Created
 - Live Link Created
+- Layout Added
+- Css Added
+- Styling Added
 
 ## Contributors
 
