@@ -4,7 +4,7 @@
 }
 body {
     font-family: 'Vollkorn', sans-serif;
-    border-top: 10px solid grey;
+    border-top: 10px solid #3a3a3a;
     margin: 0;
     background-color: #0a0a0a;
     color: whitesmoke;
@@ -14,11 +14,11 @@ section {
 }
 hr {
     border: none;
-    border-bottom: 1px solid #666666;
+    border-bottom: 2px solid #3a3a3a;
 }
 
 .container {
-    width: 1250px;
+    width: 1300px;
     margin: 0 auto;
     padding: 0;
 }
@@ -36,7 +36,7 @@ header img {
 }
 
 header h1 {
-    font-weight: 1900;
+    font-weight: 900;
     padding: 0;
     margin: 20px;
     color: #FFFFFF;
@@ -47,7 +47,7 @@ header h1 {
 header p {
     line-height: 1.3;
     font-size: 2rem;
-    padding: 0px 70px 0px 70px;
+    padding: 0px 120px 0px 120px;
     margin-bottom: 60px;
 }
 
@@ -55,7 +55,7 @@ header hr {
     background-color: black;
     height: 4px;
     border-top: none;
-    border-bottom: 3px double grey;
+    border-bottom: 3px double #3a3a3a;
     border-left: none;
     border-right: none;
 }
@@ -84,86 +84,49 @@ main {
 .worksContainer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 2fr 1fr);
-    grid-row-gap: 5px;
-    grid-column-gap: 15px;
+    grid-template-rows: repeat(3, 1fr);
+    grid-row-gap: 15px;
+    grid-column-gap: 25px;
 }
 
-.gridItem {
-    background-size: cover;
-    background-position: center;
-    height: 300px;
+.worksContainer .articleBlock p {
+    font-size: 0.9em;
+    padding-right: 10px;
 }
 
-.articleBlock {
-    height: 100px;
+.worksContainer .articleBlock > img {
+    width: 420px;
 }
 
 .articleBlock span {
-    padding-top: 5px;
+    padding-bottom: 5px;
     display: block;
-    font-size: 0.6em;
+    font-size: 0.8em;
     color: #808080;
 }
 
 
-.gridItem:nth-child(1) {
-    background-image: url('https://jonchretien.com/img/work_s4a.jpg')
-}
-.gridItem:nth-child(2) {
-    background-image: url('https://jonchretien.com/img/work_midterms.jpg')
-}
-.gridItem:nth-child(3) {
-    background-image: url('https://jonchretien.com/img/work_opinionator.gif')
-}
-.gridItem:nth-child(7) {
-    background-image: url('https://jonchretien.com/img/work_emp.jpg')
-}
-.gridItem:nth-child(8) {
-    background-image: url('https://jonchretien.com/img/work_custard.gif')
-}
-.gridItem:nth-child(9) {
-    background-image: url('https://jonchretien.com/img/work_trickipedia.jpg')
-}
-.gridItem:nth-child(13) {
-    background-image: url('https://jonchretien.com/img/work_hungry_city.gif')
-}
-.gridItem:nth-child(14) {
-    background-image: url('https://jonchretien.com/img/work_carousel.gif')
-}
-.gridItem:nth-child(15) {
-    background-image: url('https://jonchretien.com/img/work_holga_project.jpg')
-}
-
 .photoGrid {
-    grid-gap: 20px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 20px;
 }
 
-.photoGrid .gridItem {
-    height: 400px;
+
+.photoGrid .articleBlock:nth-child(3) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    height: 60%;
+    width: 100%;
 }
 
-.photoGrid .gridItem:nth-child(1) {
-    background-image: url('https://jonchretien.com/img/stripes.jpg');
+.photoGrid img {
+    width: 100%;
 }
-.photoGrid .gridItem:nth-child(2) {
-    background-image: url('https://jonchretien.com/img/camera.jpg');
-}
-.photoGrid .gridItem:nth-child(3) {
-    background-image: url('https://jonchretien.com/img/biker.jpg');
-    grid-row: span 2;
-    grid-column: span 2;
-    height: auto;
-}
-.photoGrid .gridItem:nth-child(4) {
-    background-image: url('https://jonchretien.com/img/ballerina.jpg');
-}
-.photoGrid .gridItem:nth-child(5) {
-    background-image: url('https://jonchretien.com/img/warriors.jpg');
-}
+
 
 .albumsGrid {
     grid-column-gap: 20px;
@@ -173,28 +136,17 @@ main {
 
 }
 
-.albumsGrid .gridItem {
+.albumsGrid .articleBlock > img{
     height: 300px;
+    width: 300px;
 }
 
-.albumsGrid .gridItem:nth-child(1) {
-    background-image: url('https://i.scdn.co/image/ed73696e637e57372b1dac5026f8848241c75417');
-}
-.albumsGrid .gridItem:nth-child(2) {
-    background-image: url('https://i.scdn.co/image/b8fdb9c4467c35499c2a554e7ae68842a15c2f62');
-}
-.albumsGrid .gridItem:nth-child(3) {
-    background-image: url('https://i.scdn.co/image/659f05e9ce15d0b81ea191937c2c3a3aecec160c');
-}
-.albumsGrid .gridItem:nth-child(4) {
-    background-image: url('https://i.scdn.co/image/5026fddc6c0b69e931ae99130f15d4214f1e7d41');
-}
 .albumsGrid .articleBlock {
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1.4em;
 }
 .albumsGrid .articleBlock h3 {
-    font-size: 1em;
+    font-size: 1.1em;
 }
 
 a {
@@ -232,4 +184,10 @@ nav li{
 #john{
     float: right;
     margin-left: 600px;
+}
+
+.gridItem:hover{
+    background-color: #0a0a0a;
+    opacity: 0.6;
+    transition-duration: 300ms;
 }
