@@ -37,6 +37,11 @@ Tools:
 - Css Added
 - Styling Added
 
+2018-10-15:
+- Added image files
+- Changed Html structure
+- Changed Styling
+
 ## Contributors
 
 Mogammad Taariq Bardien - 2018
