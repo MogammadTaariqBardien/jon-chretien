@@ -46,6 +46,7 @@ Tools:
 - Added Responsive Design
 - Added Links To External Pages
 - Fixed Some Html issues
+- Added Comments to HTML and CSS
 
 ## Contributors
 

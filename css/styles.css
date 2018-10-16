@@ -1,4 +1,4 @@
-
+/* Start Of Base Styling */
 * {
     box-sizing: border-box;
 }
@@ -7,22 +7,68 @@ body {
     border-top: 10px solid #3a3a3a;
     margin: 0;
     background-color: #0a0a0a;
-    color: whitesmoke;
+    color: #ccc;
 }
 section {
     margin: 50px auto;
 }
 hr {
     border: none;
-    border-bottom: 2px solid #3a3a3a;
+    border-bottom: 1px solid #3a3a3a;
 }
 
 .container {
-    width: 1300px;
+    width: 1250px;
     margin: 0 auto;
     padding: 0;
 }
 
+h2 {
+    font-weight: 900;
+    color: beige;
+    font-size: 3em;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-weight: 400;
+    color: yellow;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 1.4em;
+}
+
+main {
+    padding: 0;
+}
+
+.rule{
+    color: #666;
+}
+
+/* End of Base Styling */
+/* Start of a tag Styling */
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: #ff3;
+}
+a:visited {
+    color: #ff3;
+}
+a:hover {
+    color: grey;
+}
+a:active {
+    color: brown;
+}
+
+/* End of a tag Styling */
+/* Start Of Header Styling */
 
 header {
     text-align: center;
@@ -49,6 +95,7 @@ header p {
     font-size: 2rem;
     padding: 0px 120px 0px 120px;
     margin-bottom: 60px;
+    color: #ccc;
 }
 
 header hr {
@@ -60,26 +107,8 @@ header hr {
     border-right: none;
 }
 
-h2 {
-    font-weight: 900;
-    color: beige;
-    font-size: 3em;
-    text-align: center;
-    margin: 0;
-    margin-bottom: 10px;
-}
-
-h3 {
-    font-weight: 400;
-    color: yellow;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    font-size: 1.4em;
-}
-
-main {
-    padding: 0;
-}
+/* End of Header Styling */
+/* Start of Styling for the Selected Works Grid */
 
 .worksContainer {
     display: grid;
@@ -95,7 +124,8 @@ main {
 }
 
 .worksContainer img {
-    width: 420px;
+    width: 100%;
+    max-width: 100%;
     height: 100%;
 }
 
@@ -106,12 +136,15 @@ main {
     color: #808080;
 }
 
+/* End of Styling for the Selected Works Grid */
+/* Start of Styling for the Photography Grid */
 
 .photoGrid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
     grid-column-gap: 20px;
+    grid-row-gap: 5px;
 }
 
 
@@ -128,6 +161,8 @@ main {
     width: 100%;
 }
 
+/* ENd of Styling for the Photography Grid */
+/* Start of Styling for the Albums Grid */
 
 .albumsGrid {
     grid-column-gap: 20px;
@@ -138,46 +173,33 @@ main {
 }
 
 .albumsGrid img{
-    height: 300px;
-    width: 300px;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
 }
 
 .albumsGrid .articleBlock {
     text-align: center;
-    font-size: 1.4em;
+    font-size: 1.2em;
 }
 .albumsGrid .articleBlock h3 {
     font-size: 1.1em;
 }
 
-a {
-    text-decoration: none;
-}
-
-a:link {
-    color: yellow;
-}
-a:visited {
-    color: yellow;
-}
-a:hover {
-    color: grey;
-}
-a:active {
-    color: brown;
-}
+/* End of Styling for the Albums Grid */
+/* Start of Footer Styling */
 
 .footerContainer{
     width: auto;
-    font-size: 1.4em;
+    font-size: 1em;
 }
 
 footer {
     display: flex;
     margin: 0;
     padding: 0;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 nav{
@@ -207,17 +229,20 @@ footer div {
     justify-content: flex-end;
 }
 
+/* End of Footer Styling */
 
-
+/* Making the item turn darker upon hover */
 .gridItem:hover{
     background-color: #0a0a0a;
     opacity: 0.6;
     transition-duration: 300ms;
 }
 
+/* Start of All Media Queries */
+/* Start Of First break point */
+
 @media only screen and (max-width: 480px) and (min-width: 0px) {
     
-
     body hr {
         width: 80%;
     }
@@ -304,12 +329,13 @@ footer div {
     .footerContainer{
         text-align: center;
     }
-
 }
+
+/* End of First Break Point */
+/* Start Of Second Break Point */
 
 @media only screen and (max-width: 992px) and (min-width: 481px) {
     
-
     body hr {
         width: 80%;
     }
@@ -400,10 +426,13 @@ footer div {
     .footerContainer{
         text-align: center;
     }
-
 }
+
+/* End Of Second Break Point */
+/* Start Of Third Break Point */
 
 @media only screen and (max-width: 1132px) and (min-width: 993px) {
+    
     body hr {
         width: 90%;
     }
@@ -442,11 +471,13 @@ footer div {
         width: 90%;
         margin-left: 60px;
     }
-
-
 }
+
+/* End Of Third Break Point */
+/* Start Of Fourth Break Point */
 
 @media only screen and (max-width: 1333px) and (min-width: 1132px) {
+    
     body hr {
         width: 90%;
     }
@@ -485,7 +516,8 @@ footer div {
         width: 90%;
         margin-left: 60px;
     }
-
-
 }
+
+/* End Of Fourth Break Point */
+/* End Of Media Queries */
 
