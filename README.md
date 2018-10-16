@@ -42,6 +42,11 @@ Tools:
 - Changed Html structure
 - Changed Styling
 
+2018-10-16:
+- Added Responsive Design
+- Added Links To External Pages
+- Fixed Some Html issues
+
 ## Contributors
 
 Mogammad Taariq Bardien - 2018
