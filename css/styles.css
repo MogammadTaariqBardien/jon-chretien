@@ -1,4 +1,4 @@
-/* Start Of Base Styling */
+/* Start Of the Base Styling */
 * {
     box-sizing: border-box;
 }
@@ -48,8 +48,8 @@ main {
     color: #666;
 }
 
-/* End of Base Styling */
-/* Start of a tag Styling */
+/* End of the Base Styling */
+/* Start of the <a> tag Styling */
 a {
     text-decoration: none;
 }
@@ -67,8 +67,8 @@ a:active {
     color: brown;
 }
 
-/* End of a tag Styling */
-/* Start Of Header Styling */
+/* End of the <a> tag Styling */
+/* Start Of the Header Styling */
 
 header {
     text-align: center;
@@ -107,8 +107,8 @@ header hr {
     border-right: none;
 }
 
-/* End of Header Styling */
-/* Start of Styling for the Selected Works Grid */
+/* End of the Header Styling */
+/* Start of the Styling for the Selected Works Grid */
 
 .worksContainer {
     display: grid;
@@ -136,8 +136,8 @@ header hr {
     color: #808080;
 }
 
-/* End of Styling for the Selected Works Grid */
-/* Start of Styling for the Photography Grid */
+/* End of the Styling for the Selected Works Grid */
+/* Start of the Styling for the Photography Grid */
 
 .photoGrid {
     display: grid;
@@ -161,8 +161,8 @@ header hr {
     width: 100%;
 }
 
-/* ENd of Styling for the Photography Grid */
-/* Start of Styling for the Albums Grid */
+/* End of the Styling for the Photography Grid */
+/* Start of the Styling for the Albums Grid */
 
 .albumsGrid {
     grid-column-gap: 20px;
@@ -186,8 +186,8 @@ header hr {
     font-size: 1.1em;
 }
 
-/* End of Styling for the Albums Grid */
-/* Start of Footer Styling */
+/* End of the Styling for the Albums Grid */
+/* Start of the Footer Styling */
 
 .footerContainer{
     width: auto;
@@ -229,7 +229,7 @@ footer div {
     justify-content: flex-end;
 }
 
-/* End of Footer Styling */
+/* End of the Footer Styling */
 
 /* Making the item turn darker upon hover */
 .gridItem:hover{
@@ -239,7 +239,7 @@ footer div {
 }
 
 /* Start of All Media Queries */
-/* Start Of First break point */
+/* Start Of First break point for mobile devices */
 
 @media only screen and (max-width: 480px) and (min-width: 0px) {
     
@@ -247,10 +247,15 @@ footer div {
         width: 80%;
     }
     
+    h2 {
+        font-size: 2.2em;
+    }
+
     .container{
         width: auto;
         max-width: 100%;
     }
+    /* Changing the grid layout to a single coloumn and not many */
     .worksContainer {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -260,10 +265,8 @@ footer div {
     }
 
     .worksContainer {
-       margin-left: 100px;
+       margin-left: 60px;
        margin-right: 80px;
-
-        
     }
 
     .worksContainer img {
@@ -271,7 +274,7 @@ footer div {
         max-width: 100%;
         height: auto;
     }
-
+    /* Changing the grid layout to a single coloumn and not many */
     .photoGrid {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -287,7 +290,7 @@ footer div {
         text-align: center;
 
     }
-
+     /* Targeting the specific block in the grid to change for mobile */
     .photoGrid .articleBlock:nth-child(3) {
         grid-column-start: 1;
         grid-column-end: 2;
@@ -300,6 +303,10 @@ footer div {
         grid-row-gap: 10px;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .albumsGrid img {
+        width: 80%;
     }
 
     footer {
@@ -332,7 +339,7 @@ footer div {
 }
 
 /* End of First Break Point */
-/* Start Of Second Break Point */
+/* Start Of Second Break Point for tablets and phablets */
 
 @media only screen and (max-width: 992px) and (min-width: 481px) {
     
@@ -354,8 +361,6 @@ footer div {
     .worksContainer {
        margin-left: 100px;
        margin-right: 80px;
-
-        
     }
 
     .worksContainer img {
@@ -429,7 +434,7 @@ footer div {
 }
 
 /* End Of Second Break Point */
-/* Start Of Third Break Point */
+/* Start Of Third Break Point for smaller screens */
 
 @media only screen and (max-width: 1132px) and (min-width: 993px) {
     
@@ -474,7 +479,7 @@ footer div {
 }
 
 /* End Of Third Break Point */
-/* Start Of Fourth Break Point */
+/* Start Of Fourth Break Point for the slightly bigger screens */
 
 @media only screen and (max-width: 1333px) and (min-width: 1132px) {
     
