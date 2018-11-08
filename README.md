@@ -51,6 +51,11 @@ Tools:
 2018-10-19:
 - Changed the live link address
 
+2018-11-08
+- Fixed some responsive issues
+- Fixed readme link
+- Added abit of comments
+
 ## Contributors
 
 Mogammad Taariq Bardien - 2018
